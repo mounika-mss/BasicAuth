@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-04T15:36:58 IST" name="Default suite" finished-at="2022-11-04T15:37:03 IST" duration-ms="5265">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-04T15:36:58 IST" name="Default test" finished-at="2022-11-04T15:37:03 IST" duration-ms="5265">
+      <class name="weddingRunner.runnerwedding">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:36:58 IST" name="setUpClass" finished-at="2022-11-04T15:36:58 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:36:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:02 IST" duration-ms="3626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User want to read the data from data base"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[GetAll Request]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:02 IST" duration-ms="53" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["fetch the data by the ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[GetById request]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:02 IST" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user want to see the data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[GetBy Price Request]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:03 IST" duration-ms="398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Should be able to add the data into database"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Post Request]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:03 IST" duration-ms="77" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Able to delete the Data from Database"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DELETEBYID request]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status line "HTTP/1.1 200 " doesn't match actual status line "HTTP/1.1 404 ".
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status line "HTTP/1.1 200 " doesn't match actual status line "HTTP/1.1 404 ".
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusLine(ResponseSpecificationImpl.groovy:139)
+at io.restassured.specification.ResponseSpecification$statusLine$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusLine(ResponseSpecificationImpl.groovy:254)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusLine(ValidatableResponseOptionsImpl.java:99)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusLine(ValidatableResponseImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusLine(ValidatableResponseImpl.groovy:154)
+at io.restassured.internal.ValidatableResponseImpl.statusLine(ValidatableResponseImpl.groovy)
+at weddingStepDefinations.DeleteByIdd.user_validate_that_status_line(DeleteByIdd.java:26)
+at ✽.User validate that statusLine "HTTP/1.1 200 "(file:///D:/WeddingHall/WeddingHall/src/test/java/weddingFeatures/deleteByIdd.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T15:37:03 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User want to read the data by the name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[getByName Request]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:weddingRunner.runnerwedding@48f278eb]" started-at="2022-11-04T15:37:03 IST" name="tearDownClass" finished-at="2022-11-04T15:37:03 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- weddingRunner.runnerwedding -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
